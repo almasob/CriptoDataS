@@ -1,0 +1,81 @@
+:root{
+    --font-padrao:'Bad Script', cursive;
+    --font-titulo:'Rubik Iso', cursive;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    padding: 5px;
+    
+}
+
+header{
+    height: 15vh;
+    font-family: var(--font-titulo);
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#h_titulo{
+    font-size: 3rem;
+}
+
+main{
+    background-image: url(assets/dolar-digital.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    padding: 10px;
+}
+
+/* SEÇÃO MOEDAS E SUAS INFORMÇÕES */
+#m_moedas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_moeda{
+    background-color: rgba(255,255,255,0.7);
+    border: 1px solid red;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 15px;
+    width: 45%;
+}
+
+.moeda_titulo{
+    display: block;
+}
+
+.moeda_dados{
+    font-size: 1rem;
+}
+
+/* SEÇÃO DESCRIÇÃO DAS INFORMAÇÕES DAS MOEDAS */
+#descricao_card{
+    background-color: rgba(255,255,255,0.7);
+    border: 1px solid red;
+    color: red;
+    width: 100%;
+    text-align: center;
+
+}
+
+#descricao_card p {
+    margin-top: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+
+
+footer{
+    height: 5vh;
+}
