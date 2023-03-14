@@ -12,10 +12,10 @@
 <ul>
 	<li>Você poderá escolher dois tipos de criptomoedas</li>
 	<li>Os dados que serão disponibilizados são: </li>
-        <p>last: Preço unitário da última negociação.</p>
-        <p>high: Maior preço unitário de negociação das últimas 24 horas.</p>
-        <p>low: Menor preço unitário de negociação das últimas 24 horas.</p>
-        <p>date: Data e hora da informação em Era Unix </p>
+        <p><strong>last:</strong> Preço unitário da última negociação.</p>
+        <p><strong>high:</strong> Maior preço unitário de negociação das últimas 24 horas.</p>
+        <p><strong>low: </strong>Menor preço unitário de negociação das últimas 24 horas.</p>
+        <p><strong>date:</strong> Data e hora da informação em Era Unix </p>
 </ul>
 
 <h2>Tecnologias utilizadas</h2>
