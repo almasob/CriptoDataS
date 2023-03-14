@@ -7,14 +7,16 @@ body{
     height: 100vh;
     width: 100%;
     padding: 5px;
-    
+    background-color: rgba(70, 12, 231, 0.281);
 }
 
 header{
-    height: 15vh;
+    height: 15%;
     font-family: var(--font-titulo);
     text-align: center;
     font-size: 1.3rem;
+    color: rgb(0, 52, 121);
+    text-shadow:2px 2px 4px rgb(0, 52, 121);;
 }
 
 #h_titulo{
@@ -25,8 +27,13 @@ main{
     background-image: url(assets/dolar-digital.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 80%;
     padding: 10px;
+    font-family: var(--font-padrao);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* SEÇÃO MOEDAS E SUAS INFORMÇÕES */
@@ -34,18 +41,20 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 40px;
 }
 
 .card_moeda{
-    background-color: rgba(255,255,255,0.7);
-    border: 1px solid red;
-    color: red;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    color: rgb(0, 52, 121);
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
     font-weight: 900;
-    padding: 15px;
-    width: 45%;
+    padding: 30px 3px;
+    width: 48%;
+    gap: 25px;
 }
 
 .moeda_titulo{
@@ -56,18 +65,30 @@ main{
     font-size: 1rem;
 }
 
+.moeda_dados{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 /* SEÇÃO DESCRIÇÃO DAS INFORMAÇÕES DAS MOEDAS */
 #descricao_card{
-    background-color: rgba(255,255,255,0.7);
-    border: 1px solid red;
-    color: red;
+    background-color: rgba(255, 255, 255, 0.993);
+    color: rgb(0, 119, 255);
     width: 100%;
-    text-align: center;
+    font-size: .8rem;
+    font-weight: bold ;
+    padding: 5px;
+    border-radius: 5px;
 
 }
 
+#descricao_card h3{
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
 #descricao_card p {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 li{
@@ -77,5 +98,11 @@ li{
 
 
 footer{
-    height: 5vh;
+   height: auto;
+   font-size: 80%;
+   text-align: center;
+   font-weight: bold;
+   padding-top: 2px;
+   color: rgb(0, 52, 121);
+   letter-spacing: 1px;
 }
