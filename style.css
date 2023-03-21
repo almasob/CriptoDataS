@@ -52,13 +52,25 @@ main{
     flex-direction: column;
     font-size: 1.5rem;
     font-weight: 900;
-    padding: 30px 3px;
+    padding: 20px 3px 30px;
     width: 48%;
     gap: 25px;
 }
 
-.moeda_titulo{
+/* .moeda_titulo{
     display: block;
+} */
+
+#sel_moedas{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: var(--font-padrao);
+    background-color: rgba(70, 12, 231, 0.281);
+    color: rgb(0, 52, 121);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+
 }
 
 .moeda_dados{
