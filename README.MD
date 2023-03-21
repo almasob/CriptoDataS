@@ -2,7 +2,7 @@
 
 <h2>Status: Em desenvolvimento</h2>
 <p>Data de início: 13/03/2023</p>
-<p>Ultima atualização: 14/03/2023</p>
+<p>Ultima atualização: 21/03/2023</p>
 
 <h2>Descrição</h2>
 <p>Projeto pessoal, onde será possível analisar informações de criptomoedas</p>
