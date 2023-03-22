@@ -41,7 +41,6 @@ main{
 #m_moedas{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-top: 40px;
 }
 
@@ -58,11 +57,8 @@ main{
     gap: 25px;
 }
 
-/* .moeda_titulo{
-    display: block;
-} */
 
-#sel_moedas{
+.sel_moedas{
     font-size: 1.2rem;
     font-weight: bold;
     font-family: var(--font-padrao);

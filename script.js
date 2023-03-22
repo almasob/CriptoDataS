@@ -1,11 +1,16 @@
-var moeda = document.querySelector('#sel_moedas')
-var md1 = document.querySelector('#md1')
+var moeda1 = document.querySelector('#moeda1')
+var moeda2 = document.querySelector('#moeda2')
 
 
-moeda.addEventListener('change', ()=>{
+// moeda.addEventListener('change', 
 
-    
-    var moedaValue = moeda.value;//valor que definirá a moeda que escolhemos
+    var chama = (event) => {
+
+    var moeda = event.target;//pegamos qual card foi clicado
+    var moedaValue = moeda.value//valor que definirá a moeda que escolhemos
+    var pai = moeda.parentElement //pegamos o pai do elemento
+    var irmao = pai.children[1]//e pegamos o 'irmão' do select, para adicionar as informações
+
 
    fetch(`https://www.mercadobitcoin.net/api/${moedaValue}/ticker/`)
    .then((res)=>{
@@ -27,11 +32,14 @@ moeda.addEventListener('change', ()=>{
             <li>Hora:${date.getHours()}:${date.getMinutes()}</li>
             `
 
-            md1.innerHTML = lis
+            irmao.innerHTML = lis
 
         })
             .catch((err)=>{
                 console.log(err)
             })
-})
+}
+
+moeda1.onchange = chama;
+moeda2.onchange = chama;
 
