@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Rubik+Iso&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
     <title>CriptoDataS</title>
 </head>
 <body>
@@ -32,11 +35,7 @@
                     <option value="XRP">XRP</option>
                     <option value="DOT">Polkadot</option>
                 </select>                
-                <ul class="moeda_dados">
-                    <li>Last:R$14000.00</li>
-                    <li>High:R$14000.00</li>
-                    <li>Low:R$14000.00</li>
-                    <li>Date: 23/03/23 18:55</li>
+                <ul class="moeda_dados" id="md1">
                 </ul>
             </div>
             <div id="moeda2" class="card_moeda">
@@ -64,10 +63,11 @@
         <section id="m_descricao">
             <div id="descricao_card">
                 <h3>Descrição das informações</h3>
-                <p>last: Preço unitário da última negociação.</p>
-                <p>high: Maior preço unitário de negociação das últimas 24 horas.</p>
-                <p>low: Menor preço unitário de negociação das últimas 24 horas.</p>
-                <p>date: Data e hora da informação em Era Unix </p>
+                <p>Last: Preço unitário da última negociação.</p>
+                <p>High: Maior preço unitário de negociação das últimas 24 horas.</p>
+                <p>Low: Menor preço unitário de negociação das últimas 24 horas.</p>
+                <p>Data: Data da consulta </p>
+                <p>Hora: Hora da consulta </p>
             </div>
         </section> 
     </main>

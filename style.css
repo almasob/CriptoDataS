@@ -1,6 +1,7 @@
 :root{
     --font-padrao:'Bad Script', cursive;
     --font-titulo:'Rubik Iso', cursive;
+    --font-money: 'Inconsolata', monospace;
 }
 
 body{
@@ -29,7 +30,7 @@ main{
     background-repeat: no-repeat;
     height: 80%;
     padding: 10px;
-    font-family: var(--font-padrao);
+    font-family: var(--font-money);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
