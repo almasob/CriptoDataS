@@ -1,40 +1,44 @@
 :root{
     --font-padrao:'Bad Script', cursive;
-    --font-titulo:'Rubik Iso', cursive;
     --font-money: 'Inconsolata', monospace;
+    --font-titulo:'Rubik Iso', cursive;
 }
 
 body{
-    height: 100vh;
-    width: 100%;
-    padding: 5px;
     background-color: rgba(70, 12, 231, 0.281);
+    height: 100vh;
+    padding: 5px;
+    width: 100%;
 }
 
 header{
-    height: 15%;
-    font-family: var(--font-titulo);
-    text-align: center;
-    font-size: 1.3rem;
     color: rgb(0, 52, 121);
+    height: 15%;
+    font-family: var(--font-padrao);
+    font-size: 1.3rem;
+    font-weight: bolder;
+    text-align: center;
     text-shadow:2px 2px 4px rgb(0, 52, 121);;
 }
 
 #h_titulo{
-    font-size: 3rem;
+    font-size: 2.7rem;
+    margin-bottom: 10px;
+    font-family: var(--font-titulo);
 }
 
 main{
     background-image: url(assets/dolar-digital.webp);
-    background-size: cover;
     background-repeat: no-repeat;
-    height: 80%;
-    padding: 10px;
-    font-family: var(--font-money);
+    background-size: cover;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
+    font-family: var(--font-money);
+    font-weight: bold;
+    height: 80%;
     justify-content: space-between;
+    padding: 10px;
 }
 
 /* SEÇÃO MOEDAS E SUAS INFORMÇÕES */
@@ -50,28 +54,21 @@ main{
     color: rgb(0, 52, 121);
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
-    font-weight: 900;
+    gap: 25px;
     padding: 20px 3px 30px;
     width: 48%;
-    gap: 25px;
 }
 
 
 .sel_moedas{
-    font-size: 1.2rem;
-    font-weight: bold;
-    font-family: var(--font-padrao);
     background-color: rgba(70, 12, 231, 0.281);
-    color: rgb(0, 52, 121);
     border: none;
     border-radius: 10px;
+    color: rgb(0, 52, 121);
+    font-family: var(--font-padrao);
+    font-weight: bold;
+    font-size: 1.2rem;
     text-align: center;
-
-}
-
-.moeda_dados{
-    font-size: 1rem;
 }
 
 .moeda_dados{
@@ -83,13 +80,11 @@ main{
 /* SEÇÃO DESCRIÇÃO DAS INFORMAÇÕES DAS MOEDAS */
 #descricao_card{
     background-color: rgba(255, 255, 255, 0.993);
-    color: rgb(0, 119, 255);
-    width: 100%;
-    font-size: .8rem;
-    font-weight: bold ;
-    padding: 5px;
     border-radius: 5px;
-
+    color: rgb(0, 119, 255);
+    font-size: .8rem;
+    padding: 5px;
+    width: 100%;
 }
 
 #descricao_card h3{
@@ -97,21 +92,20 @@ main{
     text-decoration: underline;
 }
 #descricao_card p {
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
 li{
     list-style: none;
 }
 
-
-
 footer{
-   height: auto;
-   font-size: 80%;
-   text-align: center;
-   font-weight: bold;
-   padding-top: 2px;
    color: rgb(0, 52, 121);
+   font-family: var(--font-money);
+   font-size: 80%;
+   font-weight: bold;
+   height: auto;
    letter-spacing: 1px;
+   padding-top: 2px;
+   text-align: center;
 }
