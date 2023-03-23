@@ -2,6 +2,8 @@
     --font-padrao:'Bad Script', cursive;
     --font-money: 'Inconsolata', monospace;
     --font-titulo:'Rubik Iso', cursive;
+    --size-ph-selm:1.3rem;
+    --size-h-titulo:2.7rem;
 }
 
 body{
@@ -15,14 +17,14 @@ header{
     color: rgb(0, 52, 121);
     height: 15%;
     font-family: var(--font-padrao);
-    font-size: 1.3rem;
+    font-size: var(--size-ph-selm);
     font-weight: bolder;
     text-align: center;
     text-shadow:2px 2px 4px rgb(0, 52, 121);;
 }
 
 #h_titulo{
-    font-size: 2.7rem;
+    font-size: var(--size-h-titulo);
     margin-bottom: 10px;
     font-family: var(--font-titulo);
 }
@@ -67,7 +69,7 @@ main{
     color: rgb(0, 52, 121);
     font-family: var(--font-padrao);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: var(--size-ph-selm);
     text-align: center;
 }
 
@@ -108,4 +110,40 @@ footer{
    letter-spacing: 1px;
    padding-top: 2px;
    text-align: center;
+}
+
+@media screen and (min-width:480px){
+
+    :root{
+        --size-ph-selm: 1.5rem;
+        --size-h-titulo: 3rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    :root{
+        --size-ph-selm: 1.5rem;
+        --size-h-titulo: 3.5rem;
+    }
+    
+    main{
+        width: 800px;
+        margin: auto;
+    }
+    .moeda_dados{
+        font-size: 1.3rem;
+        gap:12px;
+    }
+
+    #descricao_card{
+        font-size: .9rem;
+    }
+
+    #descricao_card p{
+        margin-top: 5px;
+    }
+
+
+
+
 }
